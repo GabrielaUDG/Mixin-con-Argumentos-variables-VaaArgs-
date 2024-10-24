@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Merriweather", Helvetica, sans-serif;
+  color: #022933;
+  background-color: #EEE8D6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  color: #FFBA00;
+}
+
+#presentacion {
+  background-image: url("images/banner-superior.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  color: #FFBA00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#banner-inferior {
+  background-image: url("images/banner-inferior.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  color: #FFBA00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#botones {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #EEE8D6;
+}
+#botones h1 {
+  color: #FFBA00;
+}
+#botones button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border: 1px solid #022933;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#botones button:hover {
+  background-color: #FFBA00;
+  color: #022933;
+}/*# sourceMappingURL=style.css.map */

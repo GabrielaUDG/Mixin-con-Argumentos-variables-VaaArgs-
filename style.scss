@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$offwhite:    #EEE8D6;
+$darkblue:    #022933;
+$yellow:      #FFBA00;
+$blue:        #0076A3;
+$green:       #548C27;
+$orange:      #F39856;
+$red:         #D14348;
+$purple:      #6D73C2;
+
+$color-main: $darkblue;
+$color-backgrounds: $offwhite;
+$color-headlines: $yellow;
+
+$font-main: 'Merriweather', Helvetica, sans-serif;
+$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: $font-main;
+  color: $color-main;
+  background-color: $color-backgrounds;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-highlight;
+  color: $color-headlines;
+}
+
+// Mixin para los estilos de los banners
+@mixin banner-style($background-image, $background-size: cover, $background-position: center, $height: 300px) {
+  background-image: url($background-image);
+  background-size: $background-size;
+  background-position: $background-position;
+  background-repeat: no-repeat;
+  height: $height;
+  color: $yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Estilos para el banner de presentación
+#presentacion {
+  @include banner-style("images/banner-superior.jpg");
+  margin-bottom: 20px; // Separación entre el banner y los botones
+}
+
+// Estilos para el banner inferior
+#banner-inferior {
+  @include banner-style("images/banner-inferior.jpg");
+  margin-top: 20px; // Separación entre los botones y el banner inferior
+}
+
+// Estilos para la sección de botones
+#botones {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $offwhite;
+  
+  h1 {
+    color: $color-headlines;
+  }
+
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    border: 1px solid $color-main;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: $yellow;
+      color: $color-main;
+    }
+  }
+}
